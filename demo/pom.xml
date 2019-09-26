@@ -40,7 +40,33 @@
         <directory>src/main/resources</directory>
       </resource>
     </resources>
+
+    <plugins>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <version>1.2.1</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>java</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <mainClass>com.google.gwt.dev.codeserver.CodeServer</mainClass>
+          <arguments>
+            <argument>-src</argument>
+            <argument>/Users/mdproctor/dev/GWTX/demo/src/main/java</argument>
+            <argument>com.google.gwt.sample.hello.Hello</argument>
+            <argument>-logLevel</argument>
+            <argument>DEBUG</argument>
+          </arguments>
+        </configuration>
+      </plugin>
+    </plugins>
   </build>
+
 </project>
 
     <!--<plugins>-->

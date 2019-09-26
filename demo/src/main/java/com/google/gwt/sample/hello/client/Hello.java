@@ -26,6 +26,7 @@ import com.google.gwt.core.client.GWT;
  */
 public class Hello implements EntryPoint {
 
+  @Override
   public void onModuleLoad() {
     GWT.log("hello world");
 //    Button b = new Button("Click me", new ClickHandler() {
