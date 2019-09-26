@@ -56,6 +56,9 @@
         <configuration>
           <mainClass>com.google.gwt.dev.codeserver.CodeServer</mainClass>
           <arguments>
+            <argument>-style</argument>
+            <argument>PRETTY</argument>
+            <argument>-generateJsInteropExports</argument>
             <argument>-src</argument>
             <argument>${project.basedir}/src/main/java</argument>
             <argument>com.google.gwt.sample.hello.Hello</argument>
