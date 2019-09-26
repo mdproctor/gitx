@@ -23,6 +23,48 @@
       <artifactId>codeserver</artifactId>
       <version>1.0-SNAPSHOT</version>
     </dependency>
+
+    <dependency>
+      <groupId>org.mdp</groupId>
+      <artifactId>core</artifactId>
+      <version>1.0-SNAPSHOT</version>
+    </dependency>
   </dependencies>
 
+  <build>
+    <resources>
+      <resource>
+        <directory>src/main/java</directory>
+      </resource>
+      <resource>
+        <directory>src/main/resources</directory>
+      </resource>
+    </resources>
+  </build>
 </project>
+
+    <!--<plugins>-->
+    <!--<plugin>-->
+    <!--<artifactId>maven-resources-plugin</artifactId>-->
+    <!--<version>3.1.0</version>-->
+    <!--<executions>-->
+    <!--<execution>-->
+    <!--<id>copy-resources</id>-->
+    <!--&lt;!&ndash; here the phase you need &ndash;&gt;-->
+    <!--<phase>validate</phase>-->
+    <!--<goals>-->
+    <!--<goal>copy-resources</goal>-->
+    <!--</goals>-->
+    <!--<configuration>-->
+    <!--<outputDirectory>${basedir}/target/classes</outputDirectory>-->
+    <!--<resources>-->
+    <!--<resource>-->
+    <!--<directory>src/main/java</directory>-->
+    <!--<filtering>true</filtering>-->
+    <!--</resource>-->
+    <!--</resources>-->
+    <!--</configuration>-->
+    <!--</execution>-->
+    <!--</executions>-->
+    <!--</plugin>-->
+    <!--</plugins>-->

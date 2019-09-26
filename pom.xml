@@ -12,6 +12,8 @@
 
   <modules>
       <module>core</module>
+      <module>codeserver</module>
+      <module>demo</module>
   </modules>
 
   <properties>
